@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Warner Bros|Tv shows</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styloooo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">WARNER BROS</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+		<a href="Now trending.html">Now Trending</a>
+        <a href="collections.html">Collections</a>
+        <a href="movies.html">Movies</a>
+        <a href="games and apps.html">Games & Apps
+		<a href="Tv shows.html class="current">Tv Shows</a>
+        <a href="contact_us.html">Contacts</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+
+
+     <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="movie-info-container">
+                <div class="top">
+                    <div class="img-1">
+                       <img src = "images/tv2.jpg">
+                    </div>
+                    <div class="general-info">
+                        <h2>TITANS</h2>
+                        <div>
+                            <span>IMDb:</span>
+                            <span>7S.7 / 10</span>
+                        </div>
+                        <div>
+                            <span>Budget:</span>
+                            <span>$140 million</span>
+                        </div>
+                        <div>
+                            <span>Release Date:</span>
+                            <span>December 17, 2023 (USA)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <p>
+                     In the near future, Earth's resources are exhausted and humanity's only hope of salvation lies in travelling to a distant planet. A military family is relocated so they can participate in an experiment into man's genetic evolution in space, which will be vital to ensure that the human race survives the journey.
+                    </p>
+                </div>
+            </div>
+            <div class="img-2">
+                <img src="images/tv2.jpg" alt="">
+            </div>
+        </div>
+</body>
+</html>
